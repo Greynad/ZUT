@@ -18,10 +18,16 @@
 #ifndef ZAGTEST_H
 #define ZAGTEST_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
 
 #ifdef __cplusplus
 
@@ -74,7 +80,7 @@ errorf(const char* msg, int line, int test_nbr, const char* func_name) {
  * Mark beginning of test suite (once per test file)
  */
 #define ZUT_START \
-int main(int argc, char const *argv[]) { \
+int main(void) { \
 	int test_nbr = 0; \
 
 /*
