@@ -21,7 +21,7 @@ ZUT_TEST("test_add", {
 })
 
 ZUT_END
-
+```
 Compile it and you're good to go !
 
 Don't forget to always enclose your test with ZUT_START and ZUT_END.
