@@ -66,8 +66,7 @@ _AssertEqual(T a, T b) {
 #endif
 __attribute__((noreturn)) void 
 errorf(const char* msg, int line, int test_nbr, const char* func_name) {
-	fprintf(stderr, ERR_OUTPUT,
-				test_nbr, func_name, line, msg);
+	fprintf(stderr, ERR_OUTPUT, test_nbr, func_name, line, msg);
 	exit(-1);
 }
 

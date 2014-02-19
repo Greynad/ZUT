@@ -5,22 +5,22 @@ C/C++ header-only, lightweight, unit test framework
 
 ###Use
 
-	
-	#include "zut.h"
+```C++
+#include "zut.h"
 
-	int add(int a, int b) {
-		return a + b;
-	}
+int add(int a, int b) {
+	return a + b;
+}
 
-	ZUT_START
+ZUT_START
 
-	ZUT_LOG("About to run test_add\n");
+ZUT_LOG("About to run test_add\n");
 
-	ZUT_TEST("test_add", {
-		AssertEqual(add(1, 2), 3);
-	})
+ZUT_TEST("test_add", {
+	AssertEqual(add(1, 2), 3);
+})
 
-	ZUT_END
+ZUT_END
 
 Compile it and you're good to go !
 
