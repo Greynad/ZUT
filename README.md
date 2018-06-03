@@ -3,7 +3,7 @@ Zag Unit Test -- ZUT
 
 C/C++ header-only, lightweight, unit test framework
 
-###Use
+### Use
 
 ```C++
 #include "zut.h"
@@ -26,7 +26,7 @@ Compile it and you're good to go !
 
 Don't forget to always enclose your test with ZUT_START and ZUT_END.
 
-###Available assertions
+### Available assertions
 
 1. AssertEqual
 
